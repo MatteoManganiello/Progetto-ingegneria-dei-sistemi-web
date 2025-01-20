@@ -1,0 +1,120 @@
+.container-fluid {
+    background-color: #f86106; 
+    padding: 2vw; 
+}
+
+/* Stile per il titolo principale */
+h1 {
+    font-size: 5vw; 
+    margin-top: -1vw; 
+    text-align: center; 
+    line-height: 1.2; 
+}
+
+/* Stile per la classe `.display-4` (testo prominente) */
+.display-4 {
+    margin: 4vw 10vw; 
+    font-size: 3vw; 
+    text-align: center; 
+}
+
+/* Stile per il testo con la classe `.text-primary` */
+.text-primary {
+    font-weight: bold; 
+    font-size: 8vw; 
+    color: #f86106 !important; 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+/* Stile per un contenitore con sfondo personalizzato */
+.text-container-bg {
+    background-color: #f86106; 
+    padding: 2vw; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Stile per le card */
+.card {
+    width: calc(100% - 2rem); 
+    max-width: 22rem; 
+    display: inline-block; 
+    margin: 2vw 1vw; 
+    background-color: #DEE1E6; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}
+
+/* Stile per il titolo delle card */
+.card-title {
+    font-size: 1.5rem; 
+    color: #f86106; 
+    text-align: center; 
+    margin-bottom: 1rem; 
+}
+
+/* Stile per immagini grandi */
+.large-image {
+    width: 100%; 
+    max-width: 800px; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+/* Stile per il footer */
+footer {
+    margin-top: 5vw; 
+    background-color: #f86106; 
+    padding: 2vw; 
+    text-align: center; 
+    color: #fff; 
+    font-size: 1rem; 
+    border-top: 5px solid #fff; 
+}
+
+/* Stili media query per una maggiore responsività */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8vw; 
+    }
+
+    .display-4 {
+        margin: 2vw; 
+
+    .card {
+        width: 90%; 
+        margin: 5vw auto; 
+    }
+
+    .card-title {
+        font-size: 1.2rem; 
+    }
+
+    .large-image {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 576px) {
+    .text-primary {
+        font-size: 6vw; 
+    }
+
+    .display-4 {
+        font-size: 4vw; 
+    }
+
+    footer {
+        font-size: 0.9rem; 
+    }
+}
+}

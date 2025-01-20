@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it"> <!-- Dichiarazione del linguaggio della pagina: Italiano -->
+<head>
+    <!-- Definizione della codifica dei caratteri e configurazioni di compatibilità -->
+    <meta charset="UTF-8" /> <!-- Specifica la codifica UTF-8 per supportare caratteri speciali -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Ottimizzazione per Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsività sui dispositivi mobili -->
+
+    <!-- Titolo della pagina -->
+    <title>BuyBurger</title>
+
+    <!-- Collegamento al framework CSS di Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Collegamento al foglio di stile personalizzato -->
+    <link rel="stylesheet" href="progetto.css">
+</head>
+<body>
+    <div id="vueApp"> <!-- Root element per l'app Vue -->
+        <!-- Header della pagina -->
+        <header class="container-fluid text-white py-2"> <!-- Intestazione a tutta larghezza con sfondo bianco -->
+            <div class="d-flex justify-content-between align-items-center"> <!-- Layout flessibile per allineare gli elementi -->
+                <h1 class="text-center">BuyBurger</h1> <!-- Titolo del sito -->
+                <nav>
+                    <!-- Collegamenti di navigazione con Vue Router -->
+                    <router-link to="/Recensioni" class="btn btn-outline-light mx-2">Recensioni</router-link>
+                    <router-link to="/Scopri" class="btn btn-outline-light mx-2">Scopri di più</router-link>
+                    <router-link to="/Compra" class="btn btn-outline-light mx-2">Compra</router-link>
+                    <router-link to="/" class="btn btn-outline-light mx-2">Home</router-link>
+                    <router-link to="/Login" class="btn btn-outline-light mx-2">Login</router-link>
+                    <router-link to="/Register" class="btn btn-outline-light mx-2">Registrati</router-link>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Contenuto principale -->
+        <div class="container">
+            <!-- Testo introduttivo -->
+            <nav class="text-center my-4">
+                <ul class="list-unstyled"> <!-- Rimuove lo stile predefinito della lista -->
+                    <li>
+                        <p class="display-4 mb-0"><span class="text-primary">BuyBurger</span> Crea il tuo momento di gusto </p>
+                        <p class="text-muted h5 mt-1">(hamburger artigianali, freschi e irresistibili, a portata di clic!)</p>  
+                    </li>
+                </ul>    
+            </nav>
+        </div>
+        
+        <!-- Area di visualizzazione per le route di Vue Router -->
+        <router-view></router-view>
+    </div>
+
+    <!-- Footer della pagina -->
+    <footer class="container-fluid text-white py-3 text-center"> <!-- Sezione footer a tutta larghezza -->
+        <p class="mb-0 h5">&copy; 2025 BuyBurger. Tutti i diritti riservati.</p>
+    </footer>
+
+    <!-- Collegamenti agli script di Vue.js e Vue Router -->
+    <script src="https://unpkg.com/vue@3"></script> <!-- Framework Vue.js -->
+    <script src="https://unpkg.com/vue-router@4"></script> <!-- Libreria Vue Router -->
+    <script src="progetto.js"></script> <!-- Script personalizzato dell'applicazione -->
+</body>
+</html>
